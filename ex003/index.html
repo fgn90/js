@@ -18,9 +18,10 @@
     <p>Já me livrei da maldição.</p>
 
     <script>
-        window.alert('Minha primeira mensagem') // Uma mensagem de confirmação
-        window.confirm('Está gostando de JS?') // Janela com botão ok e cancelar
-        window.prompt('Qual é o seu nome?') // Pergunta o nome
+        var n1 = Number(window.prompt('Digite um número: '))// Transformando uma string para número permitindo que o JS defina de acordo com a necessidade se será um Float ou Inteiro.
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}.`)
     </script>
 </body>
 </html>
