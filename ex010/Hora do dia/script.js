@@ -5,6 +5,7 @@ function carregar() {
     var hora = data.getHours()
 
 
+
     msg.innerHTML = `Agora são ${hora} horas.`
 
     if (hora >= 0 && hora < 12) {
@@ -18,7 +19,3 @@ function carregar() {
         document.body.style.background = '#BE99BD'
     }
 }
-
-//  Tarde #FAAD42
-//  Noite #BE99BD
-//  dia #AA5B07
