@@ -14,6 +14,9 @@
 //console.log(nome);
 
 const n1 = 5;
-const n2 = 10;
+const n2 = '10';
 const res = n1 * n2;
-let resDuplicado = res * 3;
+let resDois = res * 3;
+resDois = resDois + 5;
+
+console.log(resDois);
