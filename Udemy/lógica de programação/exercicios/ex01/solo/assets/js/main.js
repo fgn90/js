@@ -11,6 +11,18 @@ function enviaForm(){
         peso = parseInt(peso.value);
         altura = parseFloat(altura.value);
 
+        if (!peso) { // Verifica se o peso é diferente de um valor numérico. Pois após a conversão para Number, uma string passa a ser NaN e NaN é um false.
+            res.innerHTML = `<p>Seu peso é inválido.</p>`;
+            res.style.background = "#fc6060";
+            return; // return dentro de uma função interrompe a execução do restante do código. 
+        }
+        
+        if (!altura) { // Verifica se o peso é diferente de um valor numérico. Pois após a conversão para Number, uma string passa a ser NaN e NaN é um false.
+            res.innerHTML = `<p>Sua altura é inválida.</p>`;
+            res.style.background = "#fc6060";
+            return; // return dentro de uma função interrompe a execução do restante do código. 
+        }
+
         let imc = peso/(altura*altura);
         imc = imc.toFixed(2)
 
